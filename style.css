@@ -215,9 +215,13 @@ body {
         font-size: 30px;
         cursor: pointer;
         color: #fff;
+        position: absolute;
+        left: 20px;   /* Pushes the icon to the left side */
+        top: 50%;
+        transform: translateY(-50%);
         z-index: 1001;
     }
-
+}
     .home-content, .about-content {
     padding: 20px;
 }
@@ -248,8 +252,3 @@ body {
     .menu-icon {
         display: none;
     }
-
-    .navbar {
-        display: flex !important;
-    }
-}
