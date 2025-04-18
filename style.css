@@ -209,171 +209,85 @@ body {
 .hobbies-work:hover .layer {
     height: 100%;
 }
+/* Updated CSS for mobile view */
 @media (max-width: 768px) {
-    .header {
-        padding: 15px 5%;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .navbar a {
-        margin: 10px 0;
-        font-size: 16px;
-    }
-
+    /* Home Section */
     .home {
         flex-direction: column;
-        align-items: center;
-        padding: 100px 5% 0;
         text-align: center;
+        margin-top: 50px;
+    }
+
+    .home-img {
+        width: 80%;
+        order: -1; /* Ensure the image comes first in mobile view */
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-img img {
+        width: 80%; /* Scale image size */
     }
 
     .home-content {
-        max-width: 100%;
+        width: 100%;
+        text-align: center;
     }
 
-    .home-content h1 {
-        font-size: 35px;
-    }
-
-    .home-content h3 {
-        font-size: 24px;
-    }
-
-    .home-content p {
-        font-size: 15px;
-    }
-
-    .home-img img {
-        max-width: 100%;
-        margin-top: 20px;
-    }
-
+    /* About Section */
     .about {
         flex-direction: column;
-        padding: 50px 5%;
         text-align: center;
-    }
-
-    .about-img img {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .about-content h2,
-    .about-content h3,
-    .about-content p {
-        text-align: center;
-    }
-
-    .hobbies {
-        padding: 40px 5%;
-    }
-
-    .hobbies-worklist {
-        grid-template-columns: 1fr;
-        margin-left: 0;
-        gap: 30px;
-    }
-
-    .layer {
-        width: 100%;
-    }
-
-    .hobbies-work img {
-        width: 100%;
-    }
-}
-/* Mobile Menu Icon */
-.menu-icon {
-    display: none;
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-    z-index: 100;
-}
-
-/* Responsive for Mobile */
-@media (max-width: 768px) {
-    .header {
-        padding: 20px 5%;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 70px;
-        left: -100%;
-        width: 100%;
-        background: #1f242d;
-        flex-direction: column;
-        align-items: center;
-        transition: 0.3s ease;
-        z-index: 99;
-    }
-
-    .navbar.active {
-        left: 0;
-    }
-
-    .navbar a {
-        margin: 15px 0;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .home {
-        flex-direction: column;
-        text-align: center;
-        padding: 100px 5% 0;
-    }
-
-    .home-img img {
-        margin-top: 20px;
-        max-width: 300px;
-    }
-
-    .about {
-        flex-direction: column;
         padding: 70px 5% 0;
-        text-align: center;
+    }
+
+    .about-img {
+        width: 80%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
     }
 
     .about-img img {
-        width: 70vw;
+        max-width: 80vw;
     }
 
-    .hobbies-worklist {
-        margin-left: 0;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        padding: 0 20px;
-    }
-
-    .layer {
+    .about-content {
         width: 100%;
+        text-align: center;
     }
 
-    .home-content h1 {
-        font-size: 35px;
+    .about-content h2 {
+        text-align: center;
     }
 
-    .home-content h3 {
-        font-size: 25px;
-    }
-
-    .home-content p {
-        font-size: 14px;
-    }
-
-    .about-content p {
+    /* Navigation Links with Underline */
+    .navbar a {
+        margin: 10px 0;
         font-size: 16px;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s ease;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+        color: #637A9F;
+        border-bottom: 2px solid #637A9F;
+    }
+
+    /* Read More Button */
+    .about-content a {
+        display: inline-block;
+        padding: 12px 28px;
+        background: #637A9F;
+        border-radius: 40px;
+        box-shadow: 0 0 10px #637A9F;
+        color: #1f242d;
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-top: 15px;
     }
 }
