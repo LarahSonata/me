@@ -237,7 +237,7 @@ body {
     }
 
     .navbar.active {
-        display: flex;
+        display: right;
     }
 
     .navbar a {
