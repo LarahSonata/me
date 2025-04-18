@@ -291,3 +291,89 @@ body {
         width: 100%;
     }
 }
+/* Mobile Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 5%;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background: #1f242d;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.3s ease;
+        z-index: 99;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    .navbar a {
+        margin: 15px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 5% 0;
+    }
+
+    .home-img img {
+        margin-top: 20px;
+        max-width: 300px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 70px 5% 0;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 70vw;
+    }
+
+    .hobbies-worklist {
+        margin-left: 0;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 0 20px;
+    }
+
+    .layer {
+        width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+    .home-content h3 {
+        font-size: 25px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+}
