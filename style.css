@@ -209,85 +209,47 @@ body {
 .hobbies-work:hover .layer {
     height: 100%;
 }
-/* Updated CSS for mobile view */
 @media (max-width: 768px) {
-    /* Home Section */
-    .home {
-        flex-direction: column;
-        text-align: center;
-        margin-top: 50px;
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #fff;
+        z-index: 1001;
     }
 
-    .home-img {
-        width: 80%;
-        order: -1; /* Ensure the image comes first in mobile view */
-        display: flex;
-        justify-content: center;
-    }
-
-    .home-img img {
-        width: 80%; /* Scale image size */
-    }
-
-    .home-content {
+    .home-content, .about-content {
+    padding: 20px;
+}
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
         width: 100%;
-        text-align: center;
-    }
-
-    /* About Section */
-    .about {
+        background: #1f242d;
         flex-direction: column;
-        text-align: center;
-        padding: 70px 5% 0;
+        align-items: center;
+        display: none;
     }
 
-    .about-img {
-        width: 80%;
-        margin-top: 20px;
+    .navbar.active {
         display: flex;
-        justify-content: center;
     }
 
-    .about-img img {
-        max-width: 80vw;
-    }
-
-    .about-content {
-        width: 100%;
-        text-align: center;
-    }
-
-    .about-content h2 {
-        text-align: center;
-    }
-
-    /* Navigation Links with Underline */
     .navbar a {
-        margin: 10px 0;
-        font-size: 16px;
-        text-decoration: none;
-        border-bottom: 2px solid transparent;
-        transition: all 0.3s ease;
+        margin: 15px 0;
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Show navbar inline and hide menu icon in desktop */
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none;
     }
 
-    .navbar a:hover,
-    .navbar a.active {
-        color: #637A9F;
-        border-bottom: 2px solid #637A9F;
-    }
-
-    /* Read More Button */
-    .about-content a {
-        display: inline-block;
-        padding: 12px 28px;
-        background: #637A9F;
-        border-radius: 40px;
-        box-shadow: 0 0 10px #637A9F;
-        color: #1f242d;
-        text-decoration: none;
-        font-size: 16px;
-        letter-spacing: 1px;
-        font-weight: 600;
-        margin-top: 15px;
+    .navbar {
+        display: flex !important;
     }
 }
