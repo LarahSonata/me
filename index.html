@@ -1,111 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Personal Portfolio</title>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
+    <header class="header">
     <a href="#" class="logo">John Henry</a>
 
     <div class="menu-icon" id="menu-icon">
-      <i class="bx bx-menu"></i>
+        <i class='bx bx-menu'></i>
     </div>
 
     <nav class="navbar" id="navbar">
-      <a href="#" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#hobbies">Hobbies</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
+        <a href="#" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
     </nav>
-  </header>
+</header>
 
-  <!-- Home Section -->
-  <section class="home">
-    <div class="home-img">
-      <img src="BG.png" alt="Profile Image" />
-    </div>
-    <div class="home-content">
-      <h3>Hello it's Me</h3>
-      <h1>John Henry</h1>
-      <h3>And I'm a <span>Programmer</span></h3>
-      <p>Magmahal ka ng Programmer, error nga di namin nilalayasan at iniiwan, ikaw pa kaya</p>
-      <div class="social-media">
-        <a href="https://www.facebook.com/Jhnhnnry"><i class="bx bxl-facebook"></i></a>
-        <a href="#"><i class="bx bxl-twitter"></i></a>
-        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-        <a href="#"><i class="bx bxl-linkedin"></i></a>
-      </div>
-      <a href="#" class="btn">Download CV</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="e2.png" alt="About Me Image" />
-    </div>
-    <div class="about-content">
-      <h2 class="heading">About <span>Me</span></h2>
-      <h3>Programmer</h3>
-      <p>Henry nga pala, laging galit pero ‘di ka ipagpapalit... (truncated)</p>
-      <a href="#hobbies" class="btn">Read More</a>
-    </div>
-  </section>
-
-  <!-- Hobbies Section -->
-  <section class="hobbies" id="hobbies">
-    <div class="hobbies-container">
-      <h2 class="heading">My <span>Hobbies</span></h2>
-      <div class="hobbies-worklist">
-        <div class="hobbies-work">
-          <img src="gabi.jpg" alt="Guitar"/>
-          <div class="layer">
-            <h3>Marunong mag-gitara</h3>
-            <p>Pag ako naging bf mo, haharanahin kita gabi-gabi.</p>
-          </div>
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello it's Me</h3>
+            <h1>John Henry</h1>
+            <h3>And I'm a <span>Programmer</span></h3>
+            <p>Magmahal ka ng Programmer, error nga di namin nilalayasan at iniiwan, ikaw pa kaya</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/Jhnhnnry"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
         </div>
-        <div class="hobbies-work">
-          <img src="billiard.jpg" alt="Billiard"/>
-          <div class="layer">
-            <h3>Marunong mag-billiard</h3>
-            <p>Tara pool? pooling inlab with each other</p>
-          </div>
+        <div class="home-img">
+            <img src="BG.png" alt="">
         </div>
-        <div class="hobbies-work">
-          <img src="hobbies.jpg" alt="Hidden Hobbies"/>
-          <div class="layer">
-            <h3>Hidden hobbies</h3>
-            <p>I can play piano, chess, uno cards...</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- JavaScript -->
-  <script>
-    const menuIcon = document.getElementById("menu-icon");
-    const navbar = document.getElementById("navbar");
-    const icon = menuIcon.querySelector("i");
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Programmer</h3>
+            <p>Henry nga pala, laging galit pero ‘di ka ipagpapalit. madaling tandaan pero mahirap kalimutan, limang letra pero kaya kang mahalin ng sobra. walang bisyo kundi laging i miss you‚ ikaw lang sapat na, nanginginig pa please naman ‘wag ka na maghanap ng iba kung ayaw mong mamatay ng maaga.</p>
+            <div class="about-img">
+            <img src="e2.png" alt="">
+        </div>
+            <a href="#hobbies" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <div class="hobbies" id="hobbies">
+        <div class="hobbies-container">
+            <h2 class="heading">My <span>Hobbies</span></h2>
+            <div class="hobbies-worklist">
+                <div class="hobbies-work">
+                    <img src="gabi.jpg" alt="">
+                    <div class="layer">
+                        <h3>Marunong mag-gitara</h3>
+                        <p>Pag ako naging bf mo, haharanahin kita gabi-gabi.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="hobbies-work">
+                    <img src="billiard.jpg" alt="">
+                    <div class="layer">
+                        <h3>Marunong mag-billiard</h3>
+                        <p>Tara pool? pooling inlab with each other</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="hobbies-work">
+                    <img src="hobbies.jpg" alt="">
+                    <div class="layer">
+                        <h3>Hidden hobbies</h3>
+                        <p>I can play piano, chess, uno cards, yoyo, domino, rubiks cube, cat lover hindi naninipa ng pusa, better than me??</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.getElementById('navbar');
+    const icon = menuIcon.querySelector('i');
 
     menuIcon.onclick = () => {
-      navbar.classList.toggle("active");
-      icon.classList.toggle("bx-menu");
-      icon.classList.toggle("bx-x");
+        navbar.classList.toggle('active');
+        icon.classList.toggle('bx-menu');
+        icon.classList.toggle('bx-x');
     };
 
-    document.querySelectorAll(".navbar a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navbar.classList.remove("active");
-        icon.classList.add("bx-menu");
-        icon.classList.remove("bx-x");
-      });
+    // Optional: Close menu when a link is clicked (for better mobile UX)
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('active');
+            icon.classList.add('bx-menu');
+            icon.classList.remove('bx-x');
+        });
     });
-  </script>
+</script>
 </body>
 </html>
