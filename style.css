@@ -252,3 +252,7 @@ body {
     .menu-icon {
         display: none;
     }
+.navbar {
+        display: flex !important;
+    }
+}
